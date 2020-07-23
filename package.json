@@ -1,7 +1,7 @@
 {
   "name": "express-urql",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practice using Git and Express js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maisa-ah/express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maisa-ah/express/issues"
+  },
+  "homepage": "https://github.com/Maisa-ah/express#readme"
 }
