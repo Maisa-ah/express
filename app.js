@@ -1,8 +1,6 @@
 //Maisa Ahmad
 //July 23, 2020
 
-//app.METHOD(PATH, HANDLER)
-
 const express = require('express')
 const app = express()
 const port = 3000
@@ -19,25 +17,13 @@ mongoose.connect(process.env.DB_URL,{
 })
 .catch(err=>console.log(err))
 
-
 app.use(express.json())
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-// app.get('/', function(req, res) {
-//     res.redirect('/about');
-//   });
-
-
 app.get('/about', function (req, res) {
     res.send('do u work')
 })
-
-// only responds to HTTP POST requests
-
-// app.post('/about', function (req, res) {
-//     res.send('About this wiki');
-//   })
 
 app.get('/example/a', function (req, res) {
     res.send('Hello from A!')
@@ -50,8 +36,7 @@ app.get('/example/a', function (req, res) {
     res.send('Hello from B!')
   })
 
-  app.get(/.*fish$/, function (req, res) {
-    // res.send('WHHOO')
+app.get(/.*fish$/, function (req, res) {
     res.redirect('/about');
   })
 
